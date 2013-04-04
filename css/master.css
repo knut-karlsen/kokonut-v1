@@ -320,7 +320,7 @@ h2 {
 .about p {
   max-width: 350px;
   margin: 0 auto 1em auto;
-  color: #999999;
+  color: #aaaaaa;
 }
 
 
@@ -847,6 +847,10 @@ footer .icon-top:hover {
 @media all and (-webkit-min-device-pixel-ratio: 2) {
   header {
     background-image: url(../images/bg-x2.png) repeat;
+  }
+
+  h1 {
+    height: 47px;
   }
   
   .icon-telephone {

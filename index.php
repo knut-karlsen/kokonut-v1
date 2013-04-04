@@ -1,12 +1,18 @@
 <?php 
+  //calculate age
+  $birthdate = "10/30/1984";
+  $birthdate = explode("/", $birthdate);
+  $age = (date("md", date("U", mktime(0, 0, 0, $birthdate[0], $birthdate[1], $birthdate[2]))) > date("md") ? ((date("Y")-$birthdate[2])-1):(date("Y")-$birthdate[2]));
+
+  //metadata
   $page = 'index';
   $title = 'Knut Karlsen';
-  $description = 'Mitt navn er Knut Karlsen. Jeg er 28 år og elsker web, design og kode. Trenger du en nettside er jeg mannen å prate med.';
+  $description = 'Mitt navn er Knut Karlsen. Jeg er '. $age .' år og elsker web, design og kode. Trenger du en nettside er jeg mannen å prate med.';
   include('header.php');
 ?>
 
     <div class="portfolio">
-      <hr class="borderline" />
+      <hr class="borderline group" />
 
       <?php /*
       <article class="mirrored">

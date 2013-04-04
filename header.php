@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <?php 
-  global $page, $title, $description;
+  global $page, $title, $description, $age;
   $home = 'http://kokonut.no/';
-  
-  $birthDate = "10/30/1984";
-  $birthDate = explode("/", $birthDate);
-  $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[0], $birthDate[1], $birthDate[2]))) > date("md") ? ((date("Y")-$birthDate[2])-1):(date("Y")-$birthDate[2]));
 ?>
 <html dir="ltr" lang="nb-NO">
 <head>

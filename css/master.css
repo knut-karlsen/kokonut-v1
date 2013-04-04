@@ -90,7 +90,7 @@ hr.separator {
   position: relative;
   max-width: 650px;
   height: 6px;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
   z-index: 3;
   background: url(../images/hr-line.png) center left repeat-x; 
 }
@@ -289,9 +289,14 @@ h2 {
 }
 
 .contact .avatar {
-  min-width: 80px;
-  max-width: 111px;
+  width: 150px;
+  min-width: 100px;
+  max-width: 150px;
   padding-right: 18px;
+  -webkit-transition: all 0.5s;
+     -moz-transition: all 0.5s;
+       -o-transition: all 0.5s;
+          transition: all 0.5s;
 }
 
 .about {
@@ -437,14 +442,14 @@ h3 a:hover {
 
 .portfolio {
   position: relative;
-  padding: 0 20px;
+  padding: 25px 20px 0 20px;
   z-index: 5;
 }
 
 .portfolio article {
   position: relative;
   max-width: 650px;
-  padding: 50px 0;
+  padding-bottom:50px;
   margin: 0 auto;
   zoom: 1;
 }
@@ -753,13 +758,22 @@ footer .icon-top:hover {
   header hgroup {
     padding-top: 20px;
   }
+
+  h1 {
+    height:36px;
+    background-position: bottom center;
+  }
+
+.contact .avatar {
+  width: 100px;
+}
   
   footer .icon-top {
     width: 50px;
   }
   
   .about {
-    padding-bottom: 65px;
+    padding-bottom: 45px;
   }
   
   .portfolio article {

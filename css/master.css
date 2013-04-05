@@ -284,9 +284,12 @@ h2 {
   vertical-align: middle;
 }
 
-.contact .avatar li,
 .contact .options li {
   padding: 5px 0;
+}
+
+.contact .options li:first-child {
+  padding-top: 15px;
 }
 
 .contact .avatar {

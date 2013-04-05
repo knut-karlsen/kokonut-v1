@@ -273,6 +273,7 @@ h2 {
 }
 
 .contact {
+  position: relative;
   display: table;
   margin-bottom: 25px;
 }
@@ -291,12 +292,27 @@ h2 {
 .contact .avatar {
   width: 150px;
   min-width: 100px;
-  max-width: 150px;
   padding-right: 18px;
   -webkit-transition: all 0.5s;
      -moz-transition: all 0.5s;
        -o-transition: all 0.5s;
           transition: all 0.5s;
+}
+
+.avatar .sunglasses {
+  position: absolute;
+  width:150px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 1.0s;
+     -moz-transition: opacity 1.0s;
+       -o-transition: opacity 1.0s;
+          transition: opacity 1.0s;
+}
+
+.avatar:hover .sunglasses {
+  opacity: 1;
 }
 
 .about {
@@ -764,9 +780,9 @@ footer .icon-top:hover {
     background-position: bottom center;
   }
 
-.contact .avatar {
-  width: 100px;
-}
+  .contact .avatar, .avatar .sunglasses {
+    width: 100px;
+  }
   
   footer .icon-top {
     width: 50px;

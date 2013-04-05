@@ -37,7 +37,10 @@
       </hgroup>
       <div class="about">
         <div class="contact">
-          <a class="avatar"><img src="<?php echo $home; ?>images/knut.png" alt="Knut Karlsen" /></a>
+          <a class="avatar">
+            <img src="<?php echo $home; ?>images/knut.png" alt="Knut Karlsen" />
+            <img src="<?php echo $home; ?>images/deal-with-it.png" alt="" class="sunglasses" />
+          </a>
           <ul class="options">
             <li><a class="icon-telephone" href="tel:+4795220381">+47 952 20 381</a></li>
             <li><a class="icon-email" href="mailto:knut@kokonut.no">knut@kokonut.no</a></li>
